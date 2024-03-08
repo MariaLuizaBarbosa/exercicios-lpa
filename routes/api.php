@@ -103,3 +103,9 @@ Route::get('aumento', function (Request $request) {
     return 'O salario anterior e de ' . $salario . ', o valor de aumento e de ' .
         $porcentagem . ', e o salario atual e de ' . $resultado;
 });
+
+Route::get('ponto', function (Request $request) {
+    $valor = $request->input('valor');
+    $resultado = $valor / 10;
+    return $resultado;
+});
