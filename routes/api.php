@@ -64,3 +64,11 @@ Route::get('media', function (Request $request) {
     return 'O resultado da media é: ' .
         $primeiroNota . ' + ' . $segundoNota . ' + ' . $terceiroNota . ' + ' . $quartoNota . ' + ' .  $quintoNota  . ' = ' . $resultado / 5;
 });
+
+Route::get('divisao', function (Request $request) {
+    $primeiroNumero = 30;
+    $segundoNumero = 20;
+    $resultado = $segundoNumero / $primeiroNumero;
+    return 'O resultado da divisão é: ' .
+        $segundoNumero . ' / ' . $primeiroNumero . ' = ' . $resultado;
+});
