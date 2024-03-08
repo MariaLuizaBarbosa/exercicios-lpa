@@ -109,3 +109,10 @@ Route::get('ponto', function (Request $request) {
     $resultado = $valor / 10;
     return $resultado;
 });
+
+Route::get('comissao', function (Request $request){
+    $valorvendas = $request->input('valor');
+    $comissao = $request->input('comissao');
+    $resultado = $valorvendas / $comissao;
+    return $resultado;
+});
