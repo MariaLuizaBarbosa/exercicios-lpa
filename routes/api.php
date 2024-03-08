@@ -72,3 +72,10 @@ Route::get('divisao', function (Request $request) {
     return 'O resultado da divisão é: ' .
         $segundoNumero . ' / ' . $primeiroNumero . ' = ' . $resultado;
 });
+
+Route::get('dobro', function (Request $request) {
+    $primeiroNumero = 30;
+    $resultado = $primeiroNumero * 2;
+    return 'O dobro de 30 é igual a ' .
+        $resultado;
+});
