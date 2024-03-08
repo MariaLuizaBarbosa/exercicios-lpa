@@ -45,3 +45,11 @@ Route::get('dividir', function (Request $request) {
     return 'O resultado da divisão é: ' .
         $primeiroNumero . ' / ' . $segundoNumero . ' = ' . $resultado;
 });
+
+Route::get('multiplicacao', function (Request $request) {
+    $primeiroNumero = 60;
+    $segundoNumero = 20;
+    $resultado = $primeiroNumero * $segundoNumero;
+    return 'O resultado da multiplicacao é: ' .
+        $primeiroNumero . ' x ' . $segundoNumero . ' = ' . $resultado;
+});
