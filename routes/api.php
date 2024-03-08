@@ -28,3 +28,12 @@ Route::get('somar', function (Request $request) {
     return 'O resultado da soma dos numeros é: ' .
         $primeiroNumero . ' + ' . $segundoNumero . ' = ' . $resultado;
 });
+
+Route::get('subtrair', function (Request $request) {
+    $primeiroNumero = 60;
+    $segundoNumero = 20;
+    $terceiroNumero = 40;
+    $resultado = $primeiroNumero - $segundoNumero - $terceiroNumero;
+    return 'O resultado da subtração dos numeros é: ';
+    $primeiroNumero . ' - ' . $segundoNumero . ' - ' . $terceiroNumero . ' = ' . $resultado;
+});
