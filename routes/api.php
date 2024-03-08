@@ -79,3 +79,10 @@ Route::get('dobro', function (Request $request) {
     return 'O dobro de 30 é igual a ' .
         $resultado;
 });
+
+Route::get('area', function (Request $request) {
+    $base = $request->input('base');
+    $altura = $request->input('altura');
+    $resultado = $base . $altura;
+    return $resultado = $base * $altura;
+});
