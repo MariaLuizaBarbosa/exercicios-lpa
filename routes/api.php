@@ -110,18 +110,25 @@ Route::get('ponto', function (Request $request) {
     return $resultado;
 });
 
-Route::get('comissao', function (Request $request){
+Route::get('comissao', function (Request $request) {
     $valorvendas = $request->input('valor');
     $comissao = $request->input('comissao');
     $resultado = $valorvendas / $comissao;
     return $resultado;
 });
 
-Route::get('dias', function (Request $request){
+Route::get('dias', function (Request $request) {
     $dias = $request->input('dias');
     $horas = $dias * 24;
     $minutos = $horas * 60;
     $segundos = $minutos * 60;
     $resultado = ' Serao ' . $horas . ' horas, ' . $minutos . ' minutos e ' . $segundos . ' segundos ';
     return $resultado;
-    });
+});
+
+Route::get('Preco/Quantidade', function (Request $request) {
+    $precoP = $request->input('precoP');
+    $quantP = $request->input('quantP');
+    $resultado = $precoP * $quantP;
+    return $resultado;
+});
