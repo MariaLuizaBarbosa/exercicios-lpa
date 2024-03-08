@@ -37,3 +37,11 @@ Route::get('subtrair', function (Request $request) {
     return 'O resultado da subtração dos numeros é: ';
     $primeiroNumero . ' - ' . $segundoNumero . ' - ' . $terceiroNumero . ' = ' . $resultado;
 });
+
+Route::get('dividir', function (Request $request) {
+    $primeiroNumero = 60;
+    $segundoNumero = 20;
+    $resultado = $primeiroNumero / $segundoNumero;
+    return 'O resultado da divisão é: ' .
+        $primeiroNumero . ' / ' . $segundoNumero . ' = ' . $resultado;
+});
