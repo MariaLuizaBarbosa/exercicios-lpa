@@ -53,3 +53,14 @@ Route::get('multiplicacao', function (Request $request) {
     return 'O resultado da multiplicacao é: ' .
         $primeiroNumero . ' x ' . $segundoNumero . ' = ' . $resultado;
 });
+
+Route::get('media', function (Request $request) {
+    $primeiroNota = 6;
+    $segundoNota = 8;
+    $terceiroNota = 5;
+    $quartoNota = 9;
+    $quintoNota = 6;
+    $resultado = $primeiroNota + $segundoNota + $terceiroNota + $quartoNota + $quintoNota;
+    return 'O resultado da media é: ' .
+        $primeiroNota . ' + ' . $segundoNota . ' + ' . $terceiroNota . ' + ' . $quartoNota . ' + ' .  $quintoNota  . ' = ' . $resultado / 5;
+});
