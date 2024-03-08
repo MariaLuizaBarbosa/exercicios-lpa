@@ -94,3 +94,12 @@ Route::get('desconto', function (Request $request) {
     $resultado = $compra - ($desconto * $porcentagem);
     return $resultado;
 });
+
+Route::get('aumento', function (Request $request) {
+    $salario = $request->input('salario');
+    $aumento = $request->input('aumento');
+    $porcentagem = $aumento / 100 * $salario;
+    $resultado = $salario + $porcentagem;
+    return 'O salario anterior e de ' . $salario . ', o valor de aumento e de ' .
+        $porcentagem . ', e o salario atual e de ' . $resultado;
+});
