@@ -20,3 +20,11 @@ Route::get('nome/cidade', function (Request $request) {
     $cidade = "Presidente Epitacio.";
     return "Meu nome é " . $nome . ", nasci no ano de " . $ano . " na cidade de " . $cidade;
 });
+
+Route::get('somar', function (Request $request) {
+    $primeiroNumero = 10;
+    $segundoNumero = 20;
+    $resultado = $primeiroNumero * $segundoNumero;
+    return 'O resultado da soma dos numeros é: ' .
+        $primeiroNumero . ' + ' . $segundoNumero . ' = ' . $resultado;
+});
