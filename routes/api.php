@@ -132,3 +132,70 @@ Route::get('Preco/Quantidade', function (Request $request) {
     $resultado = $precoP * $quantP;
     return $resultado;
 });
+
+Route::get('verifica/idade', function (Request $request) {
+    $idade = $request->input('idade');
+    if ($idade >= 18) {
+        return "maior de idade";
+    } else {
+        return "menor de idade";
+    }
+});
+
+Route::get('par/impar', function (Request $request) {
+    $numero = $request->input('numero');
+    if ($numero % 2 == 0){
+        return "par";
+    } else {
+        return "ímpar";
+    }
+});
+
+Route::get('maior/menor', function (Request $request) {
+$numero = $request->input('numero');
+if ($numero >= 10){
+ return "o numero é maior";
+} else {
+    return "o numero é menor";
+}
+});
+
+Route::get('temperatura', function (Request $request) {
+$temperatura = $request->input('temperatura');
+if ($temperatura >= 30){
+    return "Está quente!";
+} else {
+    return "Não está quente"; 
+}
+});
+
+Route::get('positivo/negativo', function (Request $request) {
+$numero = $request->input('numero');
+if ($numero > 0){
+    return "este número é positivo";
+} else if($numero < 0){
+    return "este número é negatvio";
+} else {
+    return "este número é zero";
+}
+});
+
+Route::get('maior/numero', function (Request $request) {
+$numero1 = $request->input('numero1');
+$numero2 = $request->input('numero2');
+if ($numero1 > $numero2){
+return "o número maior é " . $numero1;
+} else {
+    return "o numero maior é " . $numero2;
+}
+});  
+
+Route::get('divisao/tres', function (Request $request) {
+    $numero = $request->input('numero');
+    $resto = ($numero %3);
+    if ($resto == 0){
+return "o número é divisível";
+    } else {
+        return "o numero não é divisível ";
+    }
+});  
