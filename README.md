@@ -21,8 +21,8 @@ git clone https://github.com/MariaLuizaBarbosa/exercicios-lpa.git
 ``` 
 cd exercicios-lpa
 ˋˋˋ
-
 3. Iniciando o projeto
+
 ``` 
 composer update
 ```
