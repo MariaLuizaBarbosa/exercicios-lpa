@@ -20,7 +20,8 @@ git clone https://github.com/MariaLuizaBarbosa/exercicios-lpa.git
 2. Acesse o diretório do projeto:
 ``` 
 cd exercicios-lpa
-ˋˋˋ 
+ˋˋˋ
+
 3. Iniciando o projeto
 ``` 
 composer update
