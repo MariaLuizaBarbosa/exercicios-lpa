@@ -19,6 +19,7 @@ git clone https://github.com/MariaLuizaBarbosa/exercicios-lpa.git
 2.  Acesse o diretório do projeto:
 ```
 cd exercicios-lpa
+<<<<<<< HEAD
 ```
 3. Iniciando o projeto:
 ```
@@ -33,6 +34,23 @@ code .
 php artisan serve --port=80
 ```
 6. Importar o arquivo 
+=======
+ˋˋˋ
+3. Iniciando o projeto
+
+``` 
+composer update
+```
+4. Iniciando o servidor
+``` 
+code .
+```
+5. acessar o visual estudio code
+```
+php artisan serve --port=80
+```
+6. Importar o arquivo do Insomnia
+>>>>>>> df8738e284a223ac4280a472b97482ccff35e267
 
 ## Licença
 Este projeto está licenciado sobre a [MIT License] (License), o que significa que você pode utilizá-lo livremente para fins educacionais, comerciais ou pessoais.
