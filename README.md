@@ -25,10 +25,6 @@ cd exercicios-lpa
 ``` 
 composer update
 ``` 
-4. Iniciando o servidor
-``` 
-code .
-``` 
 5. Iniciando o servidor
 ``` 
 code .
