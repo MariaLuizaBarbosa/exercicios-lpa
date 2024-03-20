@@ -25,9 +25,9 @@ cd exercicios-lpa
 ``` 
 composer update
 ``` 
-4. Iniciando o servidor
+4. Acessar o Visual Studio Code
 ``` 
-code .
+php artisan serve --port=80
 ``` 
 5. Iniciando o servidor
 ``` 
