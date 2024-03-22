@@ -12,7 +12,7 @@ Certificar-se de ter os seguintes requisitos atendidos antes de começar a traba
 * Insominia 
 * Visual Studio Code instalado
 ## Como utilizar este repositório
-1. Clone este repositório para seu ambiente de desenvolvimento local utilizando o comndo:
+1. Clone este repositório para seu ambiente de desenvolvimento local utilizando o comando:
 ```
 git clone https://github.com/MariaLuizaBarbosa/exercicios-lpa.git
 ```
