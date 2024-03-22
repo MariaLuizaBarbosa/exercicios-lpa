@@ -19,7 +19,6 @@ git clone https://github.com/MariaLuizaBarbosa/exercicios-lpa.git
 2.  Acesse o diretório do projeto:
 ```
 cd exercicios-lpa
-<<<<<<< HEAD
 ```
 3. Iniciando o projeto:
 ```
@@ -30,21 +29,6 @@ composer update
 code .
 ```
 5.  Iniciando o servidor:
-```
-php artisan serve --port=80
-```
-6. Importar o arquivo 
-ˋˋˋ
-3. Iniciando o projeto
-
-``` 
-composer update
-```
-4. Iniciando o servidor
-``` 
-code .
-```
-5. acessar o visual estudio code
 ```
 php artisan serve --port=80
 ```
