@@ -212,12 +212,11 @@ Route::get('questao/06', function (Request $request) {
 
 Route::get('questao/08', function (Request $request) {
     $numero = $request->input('numero');
-    if ($numero % 7 == 0){
-return "O número é múltiplo";
+    if ($numero % 7 == 0) {
+        return "O número é múltiplo";
     } else {
         return "O número não é múltiplo";
     }
-
 });
 
 Route::get('questao/09', function (Request $request) {
@@ -231,8 +230,8 @@ Route::get('questao/09', function (Request $request) {
 
 Route::get('questao/10', function (Request $request) {
     $numero = $request->input('numero');
-    if ($numero > 0 . $numero / 2 == 0){
-        return "este número é positivo e ímpar";
+    if ($numero % 3 == 0){
+        return "Este número é positivo e ímpar";
     } 
 });
 
@@ -299,7 +298,16 @@ Route::get('questao/17', function (Request $request) {
 Route::get('questao/18', function (Request $request) {
     $numero1 = $request->input('numero1');
     $numero2 = $request->input('numero2');
-    $resultado = $numero1 / $numero2;
+    if ($numero1 == 0) {
+        return "não é possível efetuar a divisão pois o 
+    primeiro número é zero";
+    } else if ($numero2 == 0) {
+        return "não é possível efetuar a divisão pois 
+        o segundo número é zero";
+    } else{
+        $resultado = $numero1 / $numero2;
+        return $numero1 . "/" . $numero2 . "=" . $resultado;
+    }
 });
 
 Route::get('questao/19', function (Request $request) {
@@ -313,13 +321,15 @@ Route::get('questao/19', function (Request $request) {
     }
 });
 
-Route::get('questao/20', function (Request $request) {
+Route::get('questao/20', function (Request $request){
     $numero1 = $request->input('numero1');
     $numero2 = $request->input('numero2');
     $resultado = ($numero1 + $numero2);
-    if ($resultado / 2 == 0) {
-        return "Este número é par";
-    } else if ($numero1 * $numero2){
-
-    }
+    if ($resultado % 2 == 0){
+        $multiplica = $numero1 * $numero2;
+        return $numero1 . "x" . $numero2 . "=" . $multiplica;
+    } else {
+        $dividir = $numero1 % $numero2;
+        return $numero1 . "/" . $numero2 . "=" . $dividir;
+    };
 });
